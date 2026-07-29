@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int X,Y,P;
+	    cin>>X>>Y>>P;
+	    if(X>=Y)
+	    {
+	        int i=P/X -Y;
+	        cout<<i<<endl;
+	    }
+	    else{
+	        int i=P/Y-X;
+	        cout<<i<<endl;
+	    }
+	    
+	    
+	}
+
+}
