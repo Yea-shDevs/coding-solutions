@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int T;
+    cin>>T;
+    while(T--)
+{
+    int X,Y,Z;
+    cin>>X>>Y>>Z;
+    i=1,flag=0;
+    int k=0;
+    while(i<12)
+{
+if((X+KY)<=KZ)
+{
+cout<<k;
+flag=1;
+}
+i++;
+}
+cout
+
+
+}
+
+}
