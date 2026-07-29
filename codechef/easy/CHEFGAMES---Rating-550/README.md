@@ -62,7 +62,7 @@ OUT
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T09:27:54.443Z  
+**Submitted:** 2026-07-29T09:30:42.291Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -74,7 +74,7 @@ int main() {
 	while(T--)
 	{
 	    int R1,R2,R3,R4;
-	    cin>>R1>>R2>>R3>>R3>>R4;
+	    cin>>R1>>R2>>R3>>R4;
 	    if(R1==0 && R2==0 && R3==0 && R4==0)
 	    cout<<"IN"<<endl;
 	    else 
