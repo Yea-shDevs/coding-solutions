@@ -52,10 +52,11 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-30T17:52:53.732Z  
+**Submitted:** 2026-07-30T17:59:43.987Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+#include <algorithm> 
 using namespace std;
 
 int main() {
@@ -64,15 +65,8 @@ int main() {
 	while(T--){
 	    int A,B,C;
 	    cin>>A>>B>>C;
-	    if(A>B&&C)
-	    cout<<A<<endl;
-	    else if(B>A&&C)
-	    cout<<B<<endl;
-	    else if(C>A&&B)
-	    cout<<C<<endl;
-	    else if(A==B && A==C)
-	    cout<<A<<endl;
-	    
+	    int max_num = max(A, max(B,C));
+	    cout<<max_num<<endl;
 	}
 
 }
