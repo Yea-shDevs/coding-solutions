@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int T;
+	cin>>T;
+	while(T--){
+	    int A,B,C;
+	    cin>>A>>B>>C;
+	    if(A>B&&C)
+	    cout<<A<<endl;
+	    else if(B>A&&C)
+	    cout<<B<<endl;
+	    else if(C>A&&B)
+	    cout<<C<<endl;
+	    else if(A==B && A==C)
+	    cout<<A<<endl;
+	    
+	}
+
+}
