@@ -55,7 +55,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-01T17:38:42.240Z  
+**Submitted:** 2026-08-01T17:43:54.403Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -71,7 +71,8 @@ int main() {
 	    cout<<"0"<<endl;
 	    else if((Y-X)%8!=0)
 	    cout<<((Y-X)/8) +1<<endl;
-	    else cout<<"1"<<endl;
+	    else 
+	    cout<<((Y-X)/8)<<endl;
 	}
 
 }
