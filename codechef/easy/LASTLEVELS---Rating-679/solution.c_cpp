@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int T;
+	cin>>T;
+	while(T--){
+	    int X,Y,Z;
+	    cin>>X>>Y>>Z;
+	    if(X<=3)
+	    cout<<X*Y<<endl;
+	    else if (X>3){
+	     int a=(X/3)*Z +X*Y;
+	     if(X%3==0)
+	     a=a-Z;
+	     cout<<a<<endl;
+	    }
+	    
+	}
+
+}
