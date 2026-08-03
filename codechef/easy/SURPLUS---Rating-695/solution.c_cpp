@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+       int T;
+       cin>>T;
+       while(T--){
+           int A1,A2,B1,B2,trA,trB;
+           cin>>A1>>A2>>B1>>B2;
+            trA= A1-A2;
+            trB= B1-B2;
+           int tt= trA+trB;
+           int trC=-1*tt;
+           if(trC>0)
+           cout<<"YES"<<endl;
+           else 
+           cout<<"NO"<<endl;
+       }
+}
