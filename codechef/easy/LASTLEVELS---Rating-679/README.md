@@ -76,7 +76,7 @@ So, the total time = 60 + 8 + 60 + 8 + 20 = 156 minutes.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-02T06:56:56.685Z  
+**Submitted:** 2026-08-03T09:02:55.972Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
