@@ -67,7 +67,7 @@ Bob
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T20:10:32.574Z  
+**Submitted:** 2026-08-13T20:14:01.113Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -84,8 +84,12 @@ int main() {
          cout<<"Alice"<<endl;
          else if ((P+Q)%4==0)
          cout<<"Alice"<<endl;
-         else 
-         cout<<"Bob"<<endl;
+         else {
+             if((P+Q)%4<2)
+             cout<<"Alice";
+             else  cout<<"Bob"<<endl;
+         }
+         
      }
 }
 
