@@ -12,7 +12,11 @@ int main() {
          cout<<"Alice"<<endl;
          else if ((P+Q)%4==0)
          cout<<"Alice"<<endl;
-         else 
-         cout<<"Bob"<<endl;
+         else {
+             if((P+Q)%4<2)
+             cout<<"Alice";
+             else  cout<<"Bob"<<endl;
+         }
+         
      }
 }
