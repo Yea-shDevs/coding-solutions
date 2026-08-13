@@ -67,7 +67,7 @@ Bob
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-13T20:14:01.113Z  
+**Submitted:** 2026-08-13T20:15:12.347Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
