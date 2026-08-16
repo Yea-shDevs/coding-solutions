@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+int t;
+cin>>t;
+while(t--){
+    int b1[3],f=0,e=0;
+    for(int i=0;i<3;i++)
+    cin>>b1[i];
+    for(int j=0;j<3;j++)
+    {
+        if(b1[j]==1)
+        f++;
+        else
+        e++;
+    }
+    if(e>=2)
+    cout<<"Water filling time"<<endl;
+    else
+    cout<<"Not now"<<endl;
+}
+}
