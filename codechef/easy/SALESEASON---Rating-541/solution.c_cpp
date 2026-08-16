@@ -5,7 +5,7 @@ int main() {
 int t;
 cin>>t;
 while(t--){
-    int X;
+    int X=0;
     cin>>X;
     if(X<=100)
     cout<<X<<endl;
