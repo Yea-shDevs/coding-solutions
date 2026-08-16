@@ -57,7 +57,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-16T20:41:36.390Z  
+**Submitted:** 2026-08-16T20:42:14.771Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -67,7 +67,7 @@ int main() {
 int t;
 cin>>t;
 while(t--){
-    int X;
+    int X=0;
     cin>>X;
     if(X<=100)
     cout<<X<<endl;
