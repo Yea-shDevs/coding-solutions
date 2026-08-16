@@ -57,7 +57,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-16T20:45:40.384Z  
+**Submitted:** 2026-08-16T20:48:16.057Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -71,9 +71,9 @@ while(t--){
     cin>>X;
     if(X<=100)
     cout<<X<<endl;
-    else if(100<X<=1000)
+    else if(100<X && X<=1000)
     cout<<(X-25)<<endl;
-    else if(1000<X<=5000)
+    else if(1000<X && X<=5000)
     cout<<(X-100)<<endl;
     else if(X>5000)
     cout<<(X-500)<<endl;
