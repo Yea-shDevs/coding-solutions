@@ -41,7 +41,7 @@ The next $n$ lines contain one element each, the $data$ values for each node.
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T08:25:03.868Z  
+**Submitted:** 2026-08-17T08:47:43.129Z  
 
 ```cpp
 
