@@ -1,7 +1,75 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-	// your code goes here
+const long long MOD = 998244353;
 
+long long power(long long a, long long b) {
+    long long res = 1;
+
+    while (b > 0) {
+        if (b & 1)
+            res = res * a % MOD;
+
+        a = a * a % MOD;
+        b >>= 1;
+    }
+
+    return res;
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        cin >> N;
+
+        vector<int> cnt(N + 2, 0);
+
+        for (int i = 0; i < N; i++) {
+            int x;
+            cin >> x;
+            cnt[x]++;
+        }
+
+        long long ans = 0;
+        long long product = 1;
+
+        // m = mex
+        for (int m = 0; m <= N; m++) {
+
+            // Case 1: max = m - 1
+            // Only possible when m >= 1.
+            if (m >= 1) {
+                ans = (ans + product) % MOD;
+            }
+
+            // Case 2: max = m + 1
+            if (m + 1 <= N) {
+                long long waysMax =
+                    (power(2, cnt[m + 1]) - 1 + MOD) % MOD;
+
+                ans = (ans + product * waysMax) % MOD;
+            }
+
+            // Add requirement that value m must occur
+            // for the next mex (m + 1).
+            long long waysCurrent =
+                (power(2, cnt[m]) - 1 + MOD) % MOD;
+
+            product = product * waysCurrent % MOD;
+
+            // If m is absent, no larger mex is possible.
+            if (cnt[m] == 0)
+                break;
+        }
+
+        cout << ans << '\n';
+    }
+
+    return 0;
 }
