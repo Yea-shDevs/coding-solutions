@@ -58,17 +58,45 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T16:05:13.007Z  
+**Submitted:** 2026-08-19T16:05:13.789Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        long long K;
+        cin >> N >> K;
+
+        long long sum = 0;
+        long long mx = 0;
+        int ans = 0;
+
+        for (int i = 1; i <= N; i++) {
+            long long x;
+            cin >> x;
+
+            sum += x;
+            mx = max(mx, x);
+
+            if (sum - mx <= K) {
+                ans = i;
+            }
+        }
+
+        cout << ans << '\n';
+    }
+
+    return 0;
 }
-
 ```
 
 ---
