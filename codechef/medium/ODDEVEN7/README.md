@@ -54,42 +54,17 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T16:04:29.476Z  
+**Submitted:** 2026-08-19T16:02:31.925Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int T;
-    cin >> T;
+	// your code goes here
 
-    while (T--) {
-        int N;
-        cin >> N;
-
-        int odd = 0, even = 0;
-
-        for (int i = 0; i < N; i++) {
-            int x;
-            cin >> x;
-
-            if (x % 2 == 0)
-                even++;
-            else
-                odd++;
-        }
-
-        int ans = 2 * min(odd, even);
-
-        if (odd != even)
-            ans++;
-
-        cout << ans << '\n';
-    }
-
-    return 0;
 }
+
 ```
 
 ---
