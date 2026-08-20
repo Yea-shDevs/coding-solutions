@@ -65,7 +65,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-20T04:53:26.979Z  
+**Submitted:** 2026-08-20T04:56:14.033Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -81,7 +81,7 @@ while(t--){
     cout<<"YES"<<endl;
      else if(x>y&& y!=0)
     cout<<"NO"<<endl;
-    else if (((n*x)-y)/x>0)
+    else if (((n*x)-y)/x>0 && y%x==0)
     cout<<"YES"<<endl;
     else
     cout<<"NO"<<endl;    
