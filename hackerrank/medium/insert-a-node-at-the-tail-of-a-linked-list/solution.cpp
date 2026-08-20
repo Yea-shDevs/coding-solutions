@@ -1,42 +1,24 @@
 
-
-// Complete the insertNodeAtTail function below.
-
-/*
- * For your reference:
- *
- * SinglyLinkedListNode {
- *     int data;
- *     SinglyLinkedListNode* next;
- * };
- *
- */
-SinglyLinkedListNode* Getnode() {
+SinglyLinkedListNode* Getnode(){
     SinglyLinkedListNode* p;
-    p = (SinglyLinkedListNode*)malloc(sizeof(SinglyLinkedListNode));
+    p=(SinglyLinkedListNode*)malloc(sizeof(SinglyLinkedListNode));
     return p;
 }
 
-SinglyLinkedListNode* insertNodeAtTail( SinglyLinkedListNode* head, int data) {
 
+SinglyLinkedListNode* insertNodeAtTail(SinglyLinkedListNode* head, int data) {
+SinglyLinkedListNode* q=Getnode();
+q->data = data;
+q->next = NULL;
+if(head==NULL)
+return q;
+SinglyLinkedListNode* p= head;
+while( p->next != NULL)
+       p=p->next;
 
-   SinglyLinkedListNode *Q;
-   Q=Getnode();
-   Q->data=data;
-   Q->next=NULL;
-   if(head==NULL){
-    head=Q;
-   }
-   else{
-     SinglyLinkedListNode* p = head;
-    
-     while(p->next!=NULL)
-        p=p->next;
-        
-        p->next=Q;
-     }
-     return head;
+p->next= q;
+return head;
+
 
 }
-
 
