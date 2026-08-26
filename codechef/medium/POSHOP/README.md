@@ -65,17 +65,47 @@ However, it's still optimal to buy only the first item rather than buy any two o
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T16:14:03.466Z  
+**Submitted:** 2026-08-26T16:14:17.850Z  
 
 ```c_cpp
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int T;
+    cin >> T;
 
+    while (T--) {
+        int N;
+        cin >> N;
+
+        int C[100];
+
+        for (int i = 0; i < N; i++) {
+            cin >> C[i];
+        }
+
+        int ans = 0;
+
+        // Buying only one item
+        for (int i = 0; i < N; i++) {
+            ans = max(ans, C[i]);
+        }
+
+        // Buying two items
+        for (int i = 0; i < N; i++) {
+            for (int j = i + 1; j < N; j++) {
+                if (C[i] <= C[j]) {
+                    ans = max(ans, C[i] + C[j]);
+                }
+            }
+        }
+
+        cout << ans << endl;
+    }
+
+    return 0;
 }
-
 ```
 
 ---
