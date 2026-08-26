@@ -82,17 +82,56 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T16:16:44.471Z  
+**Submitted:** 2026-08-26T16:17:13.373Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        cin >> N;
+
+        vector<int> P(N + 1), pos(N + 1);
+
+        for (int i = 1; i <= N; i++) {
+            cin >> P[i];
+            pos[P[i]] = i;
+        }
+
+        vector<pair<int, int>> ans;
+
+        for (int i = 1; i <= N; i++) {
+            if (P[i] == i)
+                continue;
+
+            int j = pos[i];
+
+            if (abs(P[i] - P[j]) >= abs(i - j)) {
+                ans.push_back({i, j});
+
+                swap(P[i], P[j]);
+                pos[P[i]] = i;
+                pos[P[j]] = j;
+            }
+        }
+
+        cout << ans.size() << '\n';
+
+        for (auto [i, j] : ans) {
+            cout << i << " " << j << '\n';
+        }
+    }
+
+    return 0;
 }
-
 ```
 
 ---
