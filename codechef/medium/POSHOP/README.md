@@ -65,7 +65,7 @@ However, it's still optimal to buy only the first item rather than buy any two o
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-26T16:14:17.850Z  
+**Submitted:** 2026-08-26T16:14:35.921Z  
 
 ```c_cpp
 #include <iostream>
