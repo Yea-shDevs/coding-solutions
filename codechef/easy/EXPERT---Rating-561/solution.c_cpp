@@ -8,7 +8,7 @@ int main() {
 	{
 	 int X,Y;
 	 cin>>X>>Y;
-	 if(X/2 <=Y)
+	 if(2 * Y >= X)
 	 cout<<"YES"<<endl;
 	 else
 	 cout<<"NO"<<endl;
