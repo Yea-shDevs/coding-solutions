@@ -57,7 +57,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-28T10:09:42.927Z  
+**Submitted:** 2026-08-28T10:13:46.626Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -70,7 +70,7 @@ int main() {
 	{
 	 int X,Y;
 	 cin>>X>>Y;
-	 if(X/2 <=Y)
+	 if(2 * Y >= X)
 	 cout<<"YES"<<endl;
 	 else
 	 cout<<"NO"<<endl;
