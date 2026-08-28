@@ -2,16 +2,13 @@
 using namespace std;
 
 int main() {
-	// your code goes here
-	int T;
-	cin>>T;
-	while(T--)
-	{
-	    int N;
-	    cin>>N;
-	    int Y= N*50;
-	    int profit= Y-((0.2*Y)+(0.2*Y)+(Y*0.3));
-	    cout<<profit<<endl;
-	}
-
+int t;
+cin>>t;
+while(t--){
+    int n;
+    cin>>n;
+    cout<<(n*1000)/100<<endl;
+    
 }
+}
+
