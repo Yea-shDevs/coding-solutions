@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ int t;
+ cin>>t;
+ while(t--){
+     int a,b,c,d;
+     cin>>a>>b>>c>>d;
+     if(a>(b+c+d))
+     cout<<"YES"<<endl;
+     else  if(b>(a+c+d))
+     cout<<"YES"<<endl;
+      else if(c>(b+a+d))
+     cout<<"YES"<<endl;
+      else if(d>(b+a+c))
+     cout<<"YES"<<endl;
+     else
+     cout<<"NO"<<endl;
+     
+ }
+}
