@@ -2,10 +2,16 @@
 using namespace std;
 
 int main() {
-    int S;
-    cin >> S;
+    int N;
+    cin >> N;
 
-    cout << 10 - S << endl;
+    int cost = (N / 2) * 30;
+
+    if (N % 2 != 0) {
+        cost += 20;
+}
+
+    cout << cost << endl;
 
     return 0;
 }
