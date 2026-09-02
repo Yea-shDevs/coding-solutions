@@ -9,7 +9,7 @@ int main() {
 
     if (N % 2 != 0) {
         cost += 20;
-    }
+}
 
     cout << cost << endl;
 
