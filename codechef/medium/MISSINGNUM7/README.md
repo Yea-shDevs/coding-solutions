@@ -55,15 +55,19 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T15:58:07.982Z  
+**Submitted:** 2026-09-02T15:58:13.868Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int S;
+    cin >> S;
 
+    cout << 10 - S << endl;
+
+    return 0;
 }
 
 ```
