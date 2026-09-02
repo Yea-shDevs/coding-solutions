@@ -55,21 +55,26 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T15:58:27.485Z  
+**Submitted:** 2026-09-02T16:04:13.992Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int S;
-    cin >> S;
+    int N;
+    cin >> N;
 
-    cout << 10 - S << endl;
+    int cost = (N / 2) * 30;
+
+    if (N % 2 != 0) {
+        cost += 20;
+}
+
+    cout << cost << endl;
 
     return 0;
 }
-
 ```
 
 ---
