@@ -2,6 +2,10 @@
 using namespace std;
 
 int main() {
-	// your code goes here
+    int S;
+    cin >> S;
 
+    cout << 10 - S << endl;
+
+    return 0;
 }
