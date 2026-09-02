@@ -55,7 +55,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T16:03:58.484Z  
+**Submitted:** 2026-09-02T16:01:52.374Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -69,7 +69,7 @@ int main() {
 
     if (N % 2 != 0) {
         cost += 20;
-}
+    }
 
     cout << cost << endl;
 
