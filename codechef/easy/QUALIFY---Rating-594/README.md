@@ -58,15 +58,21 @@ Qualify
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-03T11:47:54.999Z  
+**Submitted:** 2026-09-03T16:04:00.324Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
-
+int t;
+cin>>t;
+while(t--){
+    int k;
+    cin>>k>>a>>b;
+    
+    
+}
 }
 
 ```
