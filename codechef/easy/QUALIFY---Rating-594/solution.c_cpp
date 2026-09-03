@@ -10,7 +10,7 @@ while(t--){
     if(a+(2*b)>=k)
     cout<<"Qualify"<<endl;
     else
-    cout<<"Not Qualify"<<endl;
+    cout<<"NotQualify"<<endl;
     
 }
 }
