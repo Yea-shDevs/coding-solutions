@@ -7,7 +7,7 @@ cin>>t;
 while(t--){
     int k,a,b;
     cin>>k>>a>>b;
-    if(a+(2*b)>k)
+    if(a+(2*b)>=k)
     cout<<"Qualify"<<endl;
     else
     cout<<"Not Qualify"<<endl;
