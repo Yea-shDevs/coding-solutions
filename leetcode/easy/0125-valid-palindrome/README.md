@@ -49,8 +49,8 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 
 **Language:** C++  
 **Runtime:** 0 ms  
-**Memory:** 7.7 MB  
-**Submitted:** 2026-09-06T11:27:04.799Z  
+**Memory:** 7.9 MB  
+**Submitted:** 2026-09-06T11:39:12.033Z  
 
 ```cpp
 class Solution {
@@ -58,7 +58,7 @@ public:
     bool isPalindrome(string s) {
         string str="", rev="";
         for(char ch:s){
-        if(ch>='a' && ch<='z' || ch>='A' && ch<='Z' || ch>='0' || ch<='9')
+        if(isalnum(ch))
         str=str+ch;}
         transform(str.begin(), str.end(), str.begin(), ::tolower);
         rev=str;
