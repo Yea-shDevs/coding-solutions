@@ -3,7 +3,7 @@ public:
     bool isPalindrome(string s) {
         string str="", rev="";
         for(char ch:s){
-        if(ch>='a' && ch<='z' || ch>='A' && ch<='Z' || ch>='0' || ch<='9')
+        if(isalnum(ch))
         str=str+ch;}
         transform(str.begin(), str.end(), str.begin(), ::tolower);
         rev=str;
