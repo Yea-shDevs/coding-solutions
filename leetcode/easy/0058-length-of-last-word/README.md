@@ -49,8 +49,8 @@ Explanation: The last word is "joyboy" with length 6.
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 9.3 MB (beats 5.56%)  
-**Submitted:** 2026-09-06T11:08:35.930Z  
+**Memory:** 9.4 MB (beats 5.35%)  
+**Submitted:** 2026-09-06T11:09:09.178Z  
 
 ```cpp
 class Solution {
