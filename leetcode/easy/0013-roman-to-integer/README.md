@@ -67,9 +67,9 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 7 ms (beats 51.50%)  
-**Memory:** 11.1 MB (beats 73.90%)  
-**Submitted:** 2026-09-06T07:41:18.640Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 11.2 MB (beats 73.26%)  
+**Submitted:** 2026-09-06T07:44:30.297Z  
 
 ```cpp
 class Solution {
