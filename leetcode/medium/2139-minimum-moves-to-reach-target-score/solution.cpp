@@ -2,8 +2,7 @@ class Solution {
 public:
     int minMoves(int target, int maxDoubles) {
         int count = 0;
-        if(target==1)
-        return 0;
+      
 
         if(maxDoubles==0)
         return (target-1);
