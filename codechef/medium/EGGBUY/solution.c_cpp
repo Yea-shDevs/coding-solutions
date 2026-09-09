@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int X, Y, F;
+    cin >> X >> Y >> F;
+
+    int cost1 = 12 * X;
+    int cost2 = 12 * Y + F;
+
+    cout << min(cost1, cost2);
+
+    return 0;
+}
