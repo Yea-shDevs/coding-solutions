@@ -43,8 +43,8 @@ Explanation: There are three ways to climb to the top.
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 7.8 MB (beats 88.28%)  
-**Submitted:** 2026-09-09T04:30:45.456Z  
+**Memory:** 7.8 MB (beats 74.22%)  
+**Submitted:** 2026-09-09T04:34:36.531Z  
 
 ```cpp
 class Solution {
