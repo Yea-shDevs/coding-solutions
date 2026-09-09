@@ -63,17 +63,16 @@ Double again so x = 10
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1639 ms (beats 5.11%)  
-**Memory:** 7.9 MB (beats 65.75%)  
-**Submitted:** 2026-09-09T03:59:57.358Z  
+**Runtime:** 1618 ms (beats 6.35%)  
+**Memory:** 7.8 MB (beats 95.99%)  
+**Submitted:** 2026-09-09T04:04:40.026Z  
 
 ```cpp
 class Solution {
 public:
     int minMoves(int target, int maxDoubles) {
         int count = 0;
-        if(target==1)
-        return 0;
+      
 
         if(maxDoubles==0)
         return (target-1);
