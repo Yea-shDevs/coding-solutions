@@ -47,7 +47,7 @@ Explanation: Total 0 steps will be taken.
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-14T08:07:58.672Z  
+**Submitted:** 2026-09-14T08:08:03.874Z  
 
 ```cpp
 class Solution {
