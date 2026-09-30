@@ -1,8 +1,13 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-int a,b,c;
-cin>>a>>b>>c;
+    int B, H, C;
+    cin >> B >> H >> C;
 
+    int sandwiches = min(B / 2, H + C);
+
+    cout << sandwiches << endl;
+
+    return 0;
 }
