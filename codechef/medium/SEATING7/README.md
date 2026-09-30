@@ -56,17 +56,45 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:30:01.415Z  
+**Submitted:** 2026-09-30T15:30:17.956Z  
 
 ```c_cpp
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int T;
+    cin >> T;
 
+    while (T--) {
+        int N, M, K;
+        cin >> N >> M >> K;
+
+        bool occupied[100005] = {false};
+
+        // Mark already occupied seats
+        for (int i = 0; i < M; i++) {
+            int x;
+            cin >> x;
+            occupied[x] = true;
+        }
+
+        // Find seats for K new people
+        int count = 0;
+
+        for (int seat = 1; seat <= N && count < K; seat++) {
+            if (!occupied[seat]) {
+                cout << seat << " ";
+                occupied[seat] = true;
+                count++;
+            }
+        }
+
+        cout << endl;
+    }
+
+    return 0;
 }
-
 ```
 
 ---
