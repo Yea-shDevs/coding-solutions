@@ -57,18 +57,22 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:27:42.145Z  
+**Submitted:** 2026-09-30T15:28:13.261Z  
 
 ```c_cpp
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-int a,b,c;
-cin>>a>>b>>c;
+    int B, H, C;
+    cin >> B >> H >> C;
 
+    int sandwiches = min(B / 2, H + C);
+
+    cout << sandwiches << endl;
+
+    return 0;
 }
-
 ```
 
 ---
