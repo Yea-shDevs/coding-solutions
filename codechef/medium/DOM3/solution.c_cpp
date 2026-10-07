@@ -1,0 +1,76 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        cin >> N;
+
+        vector<vector<int>> adj(N + 1);
+
+        for (int i = 0; i < N - 1; i++) {
+            int u, v;
+            cin >> u >> v;
+
+            adj[u].push_back(v);
+            adj[v].push_back(u);
+        }
+
+        // Total ways to choose the 3 vertices which are NOT in the set
+        long long total = 1LL * N * (N - 1) * (N - 2) / 6;
+
+        // Count bad triples caused by leaf-parent pairs
+        long long bad = 0;
+
+        for (int v = 1; v <= N; v++) {
+            if (adj[v].size() == 1) {
+                // Triple must contain v and its parent
+                bad += N - 2;
+            }
+        }
+
+        // Two leaves having the same parent create the same bad triple.
+        // Remove these double counts.
+        for (int v = 1; v <= N; v++) {
+            int leafCount = 0;
+
+            for (int u : adj[v]) {
+                if (adj[u].size() == 1)
+                    leafCount++;
+            }
+
+            bad -= 1LL * leafCount * (leafCount - 1) / 2;
+        }
+
+        // Now handle degree-2 vertices.
+        // Their closed neighbourhood contains exactly 3 vertices.
+        // It is bad unless that triple was already counted through a leaf.
+        for (int v = 1; v <= N; v++) {
+            if (adj[v].size() == 2) {
+                int a = adj[v][0];
+                int b = adj[v][1];
+
+                bool alreadyBad = false;
+
+                // If a is a leaf, {a,v,b} was already counted.
+                if (adj[a].size() == 1)
+                    alreadyBad = true;
+
+                // If b is a leaf, it was already counted.
+                if (adj[b].size() == 1)
+                    alreadyBad = true;
+
+                if (!alreadyBad)
+                    bad++;
+            }
+        }
+
+        cout << total - bad << endl;
+    }
+
+    return 0;
+}
