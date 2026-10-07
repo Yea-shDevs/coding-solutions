@@ -1,7 +1,14 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int X, K, Y;
+    cin >> X >> K >> Y;
 
+    if (Y % K == 0 && Y / K >= 1 && Y / K <= X)
+        cout << "YES";
+    else
+        cout << "NO";
+
+    return 0;
 }
