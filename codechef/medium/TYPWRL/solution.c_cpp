@@ -1,7 +1,42 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int T;
+    cin >> T;
 
+    while (T--) {
+        int N, M;
+        cin >> N >> M;
+
+        string S, L;
+        cin >> S >> L;
+
+        int current = 0;
+        int maximum = 0;
+        char previousHand = ' ';
+
+        for (char ch : S) {
+            char currentHand;
+
+            if (L.find(ch) != string::npos)
+                currentHand = 'L';
+            else
+                currentHand = 'R';
+
+            if (currentHand == previousHand)
+                current++;
+            else {
+                current = 1;
+                previousHand = currentHand;
+            }
+
+            maximum = max(maximum, current);
+        }
+
+        cout << maximum << endl;
+    }
+
+    return 0;
 }
