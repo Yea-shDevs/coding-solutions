@@ -39,16 +39,8 @@ public:
        else
        Q->right=p;
        /**********************/
-       printer(root);
+      
        return root;
     }
-    void printer(TreeNode* root){
-        if(root==NULL)
-        return;
 
-        cout<<root->val;
-        printer(root->left);
-        printer(root->right);
-
-    }
 };
