@@ -48,9 +48,9 @@ Output: [4,2,7,1,3,5]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 78 ms (beats 0.29%)  
-**Memory:** 59.1 MB (beats 97.92%)  
-**Submitted:** 2026-11-18T21:11:46.833Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 59.2 MB (beats 90.94%)  
+**Submitted:** 2026-11-18T21:13:01.337Z  
 
 ```cpp
 /**
@@ -94,18 +94,10 @@ public:
        else
        Q->right=p;
        /**********************/
-       printer(root);
+      
        return root;
     }
-    void printer(TreeNode* root){
-        if(root==NULL)
-        return;
 
-        cout<<root->val;
-        printer(root->left);
-        printer(root->right);
-
-    }
 };
 ```
 
