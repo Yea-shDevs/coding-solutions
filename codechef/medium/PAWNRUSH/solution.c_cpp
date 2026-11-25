@@ -1,14 +1,14 @@
-#include 
+#include <iostream>
 using namespace std;
 
 int main() {
-int R;
-cin >> R;
+    int R;
+    cin >> R;
 
-if (R == 2)
-    cout << 5;
-else
-    cout << 8 - R;
-return 0;
+    if (R == 2)
+        cout << 5;
+    else
+        cout << 8 - R;
 
+    return 0;
 }
