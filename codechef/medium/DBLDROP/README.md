@@ -66,41 +66,17 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T15:50:35.469Z  
+**Submitted:** 2026-11-25T15:48:35.401Z  
 
 ```c_cpp
-#include<iostream>
-#include<algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    int t;
-    cin>>t;
+int main() {
+	// your code goes here
 
-    while(t--){
-        int n;
-        cin>>n;
-
-        long long a[5005],sum=0,mx=0,ans=0;
-
-        for(int i=0;i<n;i++){
-            cin>>a[i];
-            sum+=a[i];
-            mx=max(mx,a[i]);
-        }
-
-        ans=sum-mx;
-
-        for(int i=0;i<n;i++){
-            long long score=sum+a[i]-max(mx,2*a[i]);
-            ans=max(ans,score);
-        }
-
-        cout<<ans<<endl;
-    }
-
-    return 0;
 }
+
 ```
 
 ---
