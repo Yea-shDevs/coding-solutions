@@ -66,7 +66,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T15:48:59.800Z  
+**Submitted:** 2026-11-25T15:50:35.469Z  
 
 ```c_cpp
 #include<iostream>
@@ -81,7 +81,7 @@ int main(){
         int n;
         cin>>n;
 
-        long long a[1005],sum=0,mx=0,ans=0;
+        long long a[5005],sum=0,mx=0,ans=0;
 
         for(int i=0;i<n;i++){
             cin>>a[i];
