@@ -60,17 +60,26 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T15:48:02.719Z  
+**Submitted:** 2026-11-25T15:48:14.985Z  
 
 ```c_cpp
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
-int main() {
-	// your code goes here
+int main(){
+    int t,n,k;
+    cin>>t;
 
+    while(t--){
+        cin>>n>>k;
+
+        if(k<=n && 2*k>=n)
+            cout<<"YES"<<endl;
+        else
+            cout<<"NO"<<endl;
+    }
+    return 0;
 }
-
 ```
 
 ---
